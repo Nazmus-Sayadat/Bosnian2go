@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Sans+Pro&display=swap');
 
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 :root{
     font-family: 'Source Sans Pro', sans-serif;
@@ -118,13 +123,13 @@ main .google-map iframe{
 /* Footer */
 
 footer{
-    height: 50vh;
+    min-height: 400px;
 }
 
 /* Footer -> Footer Content */
 
 footer .footer-content{
-    height: 44vh;
+    min-height: 350px;
     background-color: var(--clr-secondary);
 }
 
@@ -145,5 +150,125 @@ footer .footer-content .instagram{
 
 footer .footer-copyright{
     background-color: rgb(23, 23, 23);
-    height: 6vh;
+    min-height: 50px;
 }
+
+footer .footer-copyright .container p{
+    font-size: 1.25rem;
+}
+
+
+
+
+
+/* Custom Media Query */
+
+
+@media (min-width: 180px) {
+    
+    main .hero .hero-content h1{
+        font-size: 1.8rem;
+    }
+
+    main .hero .hero-content p{
+        font-size: 0.8rem;
+    }
+
+    main .student-review .container > p{
+        padding: 0 0rem;
+    }
+
+    footer .footer-copyright .container p{
+        font-size: 1rem;
+    }
+  }
+@media (min-width: 576px) {
+    
+    main .hero .hero-content h1{
+        font-size: 2rem;
+    }
+
+    main .hero .hero-content p{
+        font-size: 1rem;
+    }
+
+    main .student-review .container > p{
+        padding: 0 0rem;
+    }
+
+    footer .footer-copyright .container p{
+        font-size: 1rem;
+    }
+  }
+  @media (min-width: 768px) {
+    
+    main .hero .hero-content h1{
+        font-size: 2.5rem;
+    }
+
+    main .hero .hero-content p{
+        font-size: 1.2rem;
+    }
+
+    main .student-review .container > p{
+        padding: 0 0rem;
+    }
+
+    footer .footer-copyright .container p{
+        font-size: 1.25rem;
+    }
+  }
+  @media (min-width: 992px) {
+    
+    main .hero .hero-content h1{
+        font-size: 2.8rem;
+    }
+
+    main .hero .hero-content p{
+        font-size: 1.2rem;
+    }
+
+    main .student-review .container > p{
+        padding: 0 8rem;
+    }
+
+    footer .footer-copyright .container p{
+        font-size: 1.25rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    
+    main .hero .hero-content h1{
+        font-size: 3rem;
+    }
+
+    main .hero .hero-content p{
+        font-size: 1.5rem;
+    }
+
+    main .student-review .container > p{
+        padding: 0 10rem;
+    }
+
+    footer .footer-copyright .container p{
+        font-size: 1.25rem;
+    }
+  }
+  @media (min-width: 1400px) {
+    
+    main .hero .hero-content h1{
+        font-size: 3.5rem;
+    }
+
+    main .hero .hero-content p{
+        font-size: 1.5rem;
+    }
+
+    main .student-review .container > p{
+        padding: 0 10rem;
+    }
+
+    footer .footer-copyright .container p{
+        font-size: 1.25rem;
+    }
+  }
